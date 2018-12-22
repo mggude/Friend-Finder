@@ -5,7 +5,7 @@
 // ===============================================================================
 
 var friends = require("../data/friends");
-var newFriend = require("../public/survey");
+// var newFriend = require("../public/survey");
 
 // ===============================================================================
 // ROUTING
