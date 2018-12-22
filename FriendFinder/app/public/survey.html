@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div>
+            <br>
+            <h1>Survey Questions</h1>
+            <hr>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-header">
+                            About You
+                        </div>
+                        <div class="card-body">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="reserve-name">Name (Required)</label>
+                                    <input type="text" class="form-control" id="survey-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="reserve-phone">Link to Photo of You (Required)</label>
+                                    <input type="text" class="form-control" id="survey-photo" required>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-header">
+                            Survey
+                        </div>
+                        <div class="card-body">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="question1">1. You find it difficult to introduce yourself to other
+                                        people.</label>
+                                    <select class="form-control" id="question1">
+                                        <option disabled selected>Select An Option</option>
+                                        <option>1 (Strongly Agree)</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5 (Strongly Disagree)</option>
+                                    </select>
+                                    <br>
+                                    <label for="question2">2. You do not usually initiate conversations.</label>
+                                    <select class="form-control" id="question2">
+                                        <option disabled selected>Select An Option</option>
+                                        <option>1 (Strongly Agree)</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5 (Strongly Disagree)</option>
+                                    </select>
+                                    <br>
+                                    <label for="question3">3. You feel superior to other people.</label>
+                                    <select class="form-control" id="question3">
+                                        <option disabled selected>Select An Option</option>
+                                        <option>1 (Strongly Agree)</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5 (Strongly Disagree)</option>
+                                    </select>
+                                    <br>
+                                    <label for="question4">4. You do not mind being at the center of attention.</label>
+                                    <select class="form-control" id="question4">
+                                        <option disabled selected>Select An Option</option>
+                                        <option>1 (Strongly Agree)</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5 (Strongly Disagree)</option>
+                                    </select>
+                                    <br>
+                                    <label for="question5">5. It is often difficult for you to relate to other people’s
+                                        feelings.</label>
+                                    <select class="form-control" id="question5">
+                                        <option disabled selected>Select An Option</option>
+                                        <option>1 (Strongly Agree)</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5 (Strongly Disagree)</option>
+                                    </select>
+                                    <br>
+                                    <label for="question6">6. Your mood can change very quickly.</label>
+                                    <select class="form-control" id="question6">
+                                        <option disabled selected>Select An Option</option>
+                                        <option>1 (Strongly Agree)</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5 (Strongly Disagree)</option>
+                                    </select>
+                                    <br>
+                                    <label for="question7">7. You do not let other people influence your actions.</label>
+                                    <select class="form-control" id="question7">
+                                        <option disabled selected>Select An Option</option>
+                                        <option>1 (Strongly Agree)</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5 (Strongly Disagree)</option>
+                                    </select>
+                                    <br>
+                                    <label for="question8">8. When you sleep, your dreams tend to focus on the real
+                                        world and its events.</label>
+                                    <select class="form-control" id="question8">
+                                        <option disabled selected>Select An Option</option>
+                                        <option>1 (Strongly Agree)</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5 (Strongly Disagree)</option>
+                                    </select>
+                                    <br>
+                                    <label for="question1">9. Being right is more important than being cooperative when
+                                        it comes to teamwork.</label>
+                                    <select class="form-control" id="question1">
+                                        <option disabled selected>Select An Option</option>
+                                        <option>1 (Strongly Agree)</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5 (Strongly Disagree)</option>
+                                    </select>
+                                    <br>
+                                    <label for="question2">10. You frequently misplace your belongings.</label>
+                                    <select class="form-control" id="question10">
+                                        <option disabled selected>Select An Option</option>
+                                        <option>1 (Strongly Agree)</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5 (Strongly Disagree)</option>
+                                    </select>
+                                    <br>
+                                    <button type="submit" class="btn btn-primary submit">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <hr>
+
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/mggude/Friend-Finder">GitHub
+                        Repo</a>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+    $(".submit").on("click", function (event) {
+        event.preventDefault();
+
+        // Here we grab the form elements
+        var newFriend = {
+            friendName: $("#survey-name").val().trim(),
+            friendPhoto: $("#survey-photo").val().trim(),
+            question1: $("#question1").val(),
+            question2: $("#question2").val(),
+            question3: $("#question3").val(),
+            question4: $("#question4").val(),
+            question5: $("#question5").val(),
+            question6: $("#question6").val(),
+            question7: $("#question7").val(),
+            question8: $("#question8").val(),
+            question9: $("#question9").val(),
+            question10: $("#question10").val(),
+        };
+
+        console.log(newFriend);
+
+        // This line is the magic. It"s very similar to the standard ajax function we used.
+        // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+        // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
+        // depending on if a tables is available or not.
+
+        $.post("/api/friends", newFriend,
+            function (data) {
+
+                // If a table is available... tell user they are booked.
+                if (data) {
+                    alert("Yay! You are a friend!");
+                }
+
+                // If a table is available... tell user they on the waiting list.
+                else {
+                    alert("Sorry, you are not a friend.");
+                }
+
+                // Clear the form when submitting
+                $("#survey-name").val("");
+                $("#survey-photo").val("");
+                $("#reserve-email").val("");
+                $("#reserve-unique-id").val("");
+
+            });
+
+    });
+
+
+</script>
