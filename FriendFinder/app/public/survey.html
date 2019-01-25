@@ -3,12 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
+    
     <title>Friend Finder</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+    
+
 
 </head>
 
@@ -50,110 +55,109 @@
                             Survey
                         </div>
                         <div class="card-body">
-                            <form role="form">
+                            <form id="questionForm" role="form">
                                 <div class="form-group">
-                                    <label for="question1">1. You find it difficult to introduce yourself to other
-                                        people.</label>
-                                    <select class="form-control" id="question1">
-                                        <option disabled selected>Select An Option</option>
-                                        <option>1 (Strongly Agree)</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5 (Strongly Disagree)</option>
+                                    <label for="question1">1. You rarely do something just out of sheer curiosity.</label>
+                                    <select class="chosen-select" id="question1">
+                                        <option value=""></option>
+                                        <option value="1">1 (Strongly Agree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Disagree)</option>
                                     </select>
                                     <br>
-                                    <label for="question2">2. You do not usually initiate conversations.</label>
-                                    <select class="form-control" id="question2">
-                                        <option disabled selected>Select An Option</option>
-                                        <option>1 (Strongly Agree)</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5 (Strongly Disagree)</option>
+                                    <label for="question2">2. You often get so lost in thoughts that you ignore or
+                                        forget your surroundings.</label>
+                                    <select class="chosen-select" id="question2">
+                                        <option value=""></option>
+                                        <option value="1">1 (Strongly Agree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Disagree)</option>
                                     </select>
                                     <br>
                                     <label for="question3">3. You feel superior to other people.</label>
-                                    <select class="form-control" id="question3">
-                                        <option disabled selected>Select An Option</option>
-                                        <option>1 (Strongly Agree)</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5 (Strongly Disagree)</option>
+                                    <select class="chosen-select" id="question3">
+                                        <option value=""></option>
+                                        <option value="1">1 (Strongly Agree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Disagree)</option>
                                     </select>
                                     <br>
                                     <label for="question4">4. You do not mind being at the center of attention.</label>
-                                    <select class="form-control" id="question4">
-                                        <option disabled selected>Select An Option</option>
-                                        <option>1 (Strongly Agree)</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5 (Strongly Disagree)</option>
+                                    <select class="chosen-select" id="question4">
+                                        <option value=""></option>
+                                        <option value="1">1 (Strongly Agree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Disagree)</option>
                                     </select>
                                     <br>
-                                    <label for="question5">5. It is often difficult for you to relate to other people’s
-                                        feelings.</label>
-                                    <select class="form-control" id="question5">
-                                        <option disabled selected>Select An Option</option>
-                                        <option>1 (Strongly Agree)</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5 (Strongly Disagree)</option>
+                                    <label for="question5">5. You are usually highly motivated and energetic.</label>
+                                    <select class="chosen-select" id="question5">
+                                        <option value=""></option>
+                                        <option value="1">1 (Strongly Agree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Disagree)</option>
                                     </select>
                                     <br>
                                     <label for="question6">6. Your mood can change very quickly.</label>
-                                    <select class="form-control" id="question6">
-                                        <option disabled selected>Select An Option</option>
-                                        <option>1 (Strongly Agree)</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5 (Strongly Disagree)</option>
+                                    <select class="chosen-select" id="question6">
+                                        <option value=""></option>
+                                        <option value="1">1 (Strongly Agree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Disagree)</option>
                                     </select>
                                     <br>
                                     <label for="question7">7. You do not let other people influence your actions.</label>
-                                    <select class="form-control" id="question7">
-                                        <option disabled selected>Select An Option</option>
-                                        <option>1 (Strongly Agree)</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5 (Strongly Disagree)</option>
+                                    <select class="chosen-select" id="question7">
+                                        <option value=""></option>
+                                        <option value="1">1 (Strongly Agree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Disagree)</option>
                                     </select>
                                     <br>
                                     <label for="question8">8. When you sleep, your dreams tend to focus on the real
                                         world and its events.</label>
-                                    <select class="form-control" id="question8">
-                                        <option disabled selected>Select An Option</option>
-                                        <option>1 (Strongly Agree)</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5 (Strongly Disagree)</option>
+                                    <select class="chosen-select" id="question8">
+                                        <option value=""></option>
+                                        <option value="1">1 (Strongly Agree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Disagree)</option>
                                     </select>
                                     <br>
                                     <label for="question1">9. Being right is more important than being cooperative when
                                         it comes to teamwork.</label>
-                                    <select class="form-control" id="question1">
-                                        <option disabled selected>Select An Option</option>
-                                        <option>1 (Strongly Agree)</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5 (Strongly Disagree)</option>
+                                    <select class="chosen-select" id="question9">
+                                        <option value=""></option>
+                                        <option value="1">1 (Strongly Agree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Disagree)</option>
                                     </select>
                                     <br>
                                     <label for="question2">10. You frequently misplace your belongings.</label>
-                                    <select class="form-control" id="question10">
-                                        <option disabled selected>Select An Option</option>
-                                        <option>1 (Strongly Agree)</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5 (Strongly Disagree)</option>
+                                    <select class="chosen-select" id="question10">
+                                        <option value=""></option>
+                                        <option value="1">1 (Strongly Agree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Disagree)</option>
                                     </select>
                                     <br>
                                     <button type="submit" class="btn btn-primary submit">Submit</button>
@@ -178,60 +182,114 @@
 
     </div>
 
+    <div id="results-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title"><strong>Best Match</strong></h2>
+                </div>
+                <div class="modal-body">
+                    <h2 id="match-name"></h2>
+                    <img id="match-img" src="https://nerdist.com/wp-content/uploads/2017/09/harry-potter-promo-image.jpeg"
+                        alt="harry-potter-promo-image">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+
+        var config = {
+            ".chosen-select": {},
+            ".chosen-select-deselect": {
+                allow_single_deselect: true
+            },
+            ".chosen-select-no-single": {
+                disable_search_threshold: 10
+            },
+            ".chosen-select-no-results": {
+                no_results_text: "Oops, nothing found!"
+            },
+            ".chosen-select-width": {
+                width: "95%"
+            }
+        };
+
+        for (var selector in config) {
+            $(selector).chosen(config[selector]);
+        }
+
+        $(".submit").on("click", function (event) {
+            event.preventDefault();
+
+            // Form validation
+            function validateForm() {
+                var isValid = true;
+                $(".form-control").each(function () {
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+
+                $(".chosen-select").each(function () {
+
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+                return isValid;
+            }
+
+            if (validateForm()) {
+                // Here we grab the form elements
+                var newFriend = {
+
+                    friendName: $("#survey-name").val().trim(),
+                    friendPhoto: $("#survey-photo").val().trim(),
+                    scores: [
+                        $("#question1").val(),
+                        $("#question2").val(),
+                        $("#question3").val(),
+                        $("#question4").val(),
+                        $("#question5").val(),
+                        $("#question6").val(),
+                        $("#question7").val(),
+                        $("#question8").val(),
+                        $("#question9").val(),
+                        $("#question10").val(),
+                    ]
+                };
+
+
+
+                $.post("/api/friends", newFriend, function (data) {
+                    // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                    $("#match-name").text(data.name);
+                    $("#match-img").attr("src", data.photo);
+                    $("#match-img").attr("width", "100%");
+
+                    // Show the modal with the best match
+                    $("#results-modal").modal("toggle");
+
+                });
+            } else {
+                alert("Please fill out all fields before submitting!");
+            }
+
+        });
+
+
+
+    </script>
+
 </body>
 
 </html>
-
-<script type="text/javascript">
-
-    $(".submit").on("click", function (event) {
-        event.preventDefault();
-
-        // Here we grab the form elements
-        var newFriend = {
-            friendName: $("#survey-name").val().trim(),
-            friendPhoto: $("#survey-photo").val().trim(),
-            question1: $("#question1").val(),
-            question2: $("#question2").val(),
-            question3: $("#question3").val(),
-            question4: $("#question4").val(),
-            question5: $("#question5").val(),
-            question6: $("#question6").val(),
-            question7: $("#question7").val(),
-            question8: $("#question8").val(),
-            question9: $("#question9").val(),
-            question10: $("#question10").val(),
-        };
-
-        console.log(newFriend);
-
-        // This line is the magic. It"s very similar to the standard ajax function we used.
-        // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
-        // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
-        // depending on if a tables is available or not.
-
-        $.post("/api/friends", newFriend,
-            function (data) {
-
-                // If a table is available... tell user they are booked.
-                if (data) {
-                    alert("Yay! You are a friend!");
-                }
-
-                // If a table is available... tell user they on the waiting list.
-                else {
-                    alert("Sorry, you are not a friend.");
-                }
-
-                // Clear the form when submitting
-                $("#survey-name").val("");
-                $("#survey-photo").val("");
-                $("#reserve-email").val("");
-                $("#reserve-unique-id").val("");
-
-            });
-
-    });
-
-
-</script>
